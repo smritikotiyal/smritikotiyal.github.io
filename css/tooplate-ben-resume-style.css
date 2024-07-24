@@ -392,7 +392,10 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   .testimonials-image {
-    margin: 0 1rem 1rem 1rem;
+    /*margin: 0 1rem 1rem 1rem;*/
+    /*Added by SK - 07/22*/
+    margin: 1rem 1rem 1rem -0rem;
+    position: absolute;
   }
 
   .testimonials-image img {
@@ -401,6 +404,9 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .testimonials-info {
     width: 100%;
+    /*Added by SK - 07/22*/
+    margin: 26rem 1rem 1rem 0rem;
+    position: relative;
   }
 
   .testimonials .owl-theme .owl-nav.disabled+.owl-dots {
