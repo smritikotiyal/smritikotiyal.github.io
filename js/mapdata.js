@@ -1591,14 +1591,14 @@ var simplemaps_worldmap_mapdata={
       lng: -0.127,
       name: "Bradford and London",
       color: "Blue",
-      description: "2019 - 2023 : As I realized my inclination toward Data Science, I pursued an MS in Big Data Science and Technology at the University of Bradford, UK (2019-2020), holding three research assistant positions. I developed a UI for the IAQ Monitoring project under SCORE and created a visual analytics solution for public health data for the YHCR region with the Bradford Institute of Health Research (Sep 2020 – Jan 2021). In April 2021, I began working as an AI Engineer - KTP Associate, building an AI solution for a London-based immigration law firm, which included developing a conversational agent and decision support system internal to the firm."
+      description: "2019 - 2023 : As I realized my inclination towards Data Science, I pursued an MS in Big Data Science and Technology at the University of Bradford, UK (2019-2020), holding three different Research Assistant positions. I developed a UI for the IAQ Monitoring project under SCORE for the data fetched from the IoT devices installed around Bradford city. I also created a visual analytics solution for public health data for the YHCR region with the Bradford Institute of Health Research (Sep 2020 – Jan 2021). In April 2021, I began working as an AI Engineer - KTP Associate, building an AI solution for a London-based immigration law firm, which included developing a knowledge graph ontology, conversational agent and decision support system internal to the firm."
     },
     "3": {
       lat: 47.604,
       lng: -122.329,
       name: "Seattle",
       color: "Red",
-      description: "2023 - Present : I moved to Seattle in March 2023 after marrying this lucky man! I took a year-long career break to enjoy my personal life. Now, I am ready to return to action and restart as a student. I will begin my MS in Information Management with a specialization in Data Science in the Mid-Career track at the University of Washington, Seattle, starting in Fall 2024."
+      description: "2023 - Present : I moved to Seattle in March 2023 after marrying this lucky man! I took a year-long career break to enjoy my personal life. Now, I have returned to action and restarted as a student. I am pursuing my MS in Information Management with a specialization in Data Science in the Mid-Career track at the University of Washington, Seattle. I will graduate in September/December 2025."
     }
   },
   labels: {}
