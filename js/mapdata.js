@@ -1598,7 +1598,7 @@ var simplemaps_worldmap_mapdata={
       lng: -122.329,
       name: "Seattle",
       color: "Red",
-      description: "2023 - Present : I moved to Seattle in March 2023 after marrying this lucky man! I took a year-long career break to enjoy my personal life. Now, I have returned to action and restarted as a student. I am pursuing my MS in Information Management with a specialization in Data Science in the Mid-Career track at the University of Washington, Seattle. I will graduate in September/December 2025."
+      description: "2023 - Present : I moved to Seattle in March 2023 after marrying this lucky man! I took a year-long career break to enjoy my personal life. I, then returned to action and restarted as a student in August 2024. I recently graduated from the University of Washington, Seattle, with an MS in Information Management, specializing in Data Science through the Mid-Career track. Now I am contracting as a Data Analyst, GTM Analytics, at Qualtrics via Artech L.L.C."
     }
   },
   labels: {}
