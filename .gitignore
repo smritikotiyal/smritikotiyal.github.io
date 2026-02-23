@@ -1,0 +1,12 @@
+# Images/albums (private)
+images/albums/
+
+# Data files
+data/
+*.csv
+
+# Environment files
+.env
+
+# OS / editor junk
+.DS_Store

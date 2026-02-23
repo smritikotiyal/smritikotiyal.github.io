@@ -1,0 +1,555 @@
+/*
+  blog-style.css
+  Styles for Highlights, Blog CTA (index.html) and Life Blog page (blog.html)
+*/
+
+
+/*---------------------------------------
+   SLIM HIGHLIGHTS — both pages
+-----------------------------------------*/
+
+.highlights-slim {
+  background: var(--dark-color);
+  padding: 0.9rem 0;
+}
+
+.highlights-slim-personal {
+  background: var(--primary-color);
+}
+
+.highlight-ticker {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.highlight-label {
+  color: var(--gray-color);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+
+.highlight-slim-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.highlight-slim-text {
+  color: var(--white-color);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.highlights-slim-personal .highlight-label {
+  color: rgba(1, 1, 1, 0.45);
+}
+
+.highlights-slim-personal .highlight-slim-text {
+  color: var(--dark-color);
+}
+
+.highlight-badge {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  padding: 3px 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.highlight-badge-dark {
+  background: var(--dark-color);
+  color: var(--primary-color);
+}
+
+
+/*---------------------------------------
+   BLOG CTA STRIP (index.html)
+-----------------------------------------*/
+
+.blog-cta-strip {
+  background: #f9f9f9;
+  padding: 1.2rem 0;
+  border-top: 3px solid var(--primary-color);
+}
+
+.blog-cta-strip p {
+  margin: 0;
+  font-size: 17px;
+  color: var(--p-color);
+}
+
+.blog-cta-link {
+  color: var(--dark-color);
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1px;
+}
+
+.blog-cta-link:hover {
+  color: var(--dark-color);
+  border-bottom-color: var(--dark-color);
+  text-decoration: none;
+}
+
+
+/*---------------------------------------
+   BLOG HERO
+-----------------------------------------*/
+
+.blog-hero {
+  background: var(--dark-color);
+  min-height: 36vh;
+  padding: 7rem 0 4rem 0;
+}
+
+.blog-hero-title {
+  color: var(--primary-color);
+  font-size: 56px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.blog-hero-sub {
+  color: #c8c8c8;
+  font-size: 19px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+
+/*---------------------------------------
+   NAVBAR (blog page — always visible)
+-----------------------------------------*/
+
+.navbar-blog {
+  position: relative !important;
+  opacity: 1 !important;
+  background: var(--menu-bg-color) !important;
+}
+
+
+/*---------------------------------------
+   BLOG SECTION SHARED
+-----------------------------------------*/
+
+.blog-section-desc {
+  color: var(--p-color);
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+
+.bg-light-blog {
+  background: #f9f9f9;
+}
+
+
+/*---------------------------------------
+   HEALTH TRACKER
+-----------------------------------------*/
+
+.health-tracker-section {
+  background: #ffffff;
+}
+
+.tracker-goal-wrap {
+  max-width: 560px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.tracker-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tracker-stat {
+  text-align: center;
+}
+
+.tracker-stat-value {
+  display: block;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--dark-color);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.tracker-stat-label {
+  font-size: 12px;
+  color: var(--gray-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tracker-progress-bar-wrap {
+  background: #e8e8e8;
+  border-radius: 40px;
+  height: 10px;
+  overflow: hidden;
+  margin: 1rem 0 0.4rem 0;
+}
+
+.tracker-progress-bar-fill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 40px;
+  transition: width 1s ease;
+}
+
+.tracker-progress-label {
+  font-size: 13px;
+  color: var(--gray-color);
+}
+
+.tracker-charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.tracker-chart-card {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.tracker-chart-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.tracker-no-data {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--gray-color);
+  font-size: 16px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  grid-column: 1 / -1;
+}
+
+.tracker-no-data-icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.tracker-update-note {
+  text-align: center;
+  font-size: 13px;
+  color: var(--gray-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.tracker-chart-full {
+  grid-column: 1 / -1;
+}
+
+.tracker-chart-full canvas {
+  max-height: 240px;
+}
+
+.tracker-step-goal {
+  font-size: 11px;
+  color: var(--gray-color);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: 0.3rem;
+}
+
+
+/*---------------------------------------
+   WEEKLY NOTES
+-----------------------------------------*/
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.note-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(1, 1, 1, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.note-card:hover {
+  box-shadow: 0 8px 32px rgba(1, 1, 1, 0.12);
+}
+
+.note-date {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--gray-color);
+  font-weight: 400;
+}
+
+.note-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.note-body p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--p-color);
+  margin: 0;
+}
+
+.note-body p + p {
+  margin-top: 0.6rem;
+}
+
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.4rem;
+}
+
+.note-tag {
+  background: var(--primary-color);
+  color: var(--dark-color);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 3px 14px;
+}
+
+
+/*---------------------------------------
+   ALBUMS
+-----------------------------------------*/
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.album-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(1, 1, 1, 0.07);
+  background: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.album-card:hover {
+  box-shadow: 0 8px 32px rgba(1, 1, 1, 0.14);
+  transform: translateY(-4px);
+}
+
+.album-cover {
+  width: 100%;
+  height: 220px;
+  display: block;
+}
+
+.album-cover img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.album-cover-placeholder {
+  height: 220px;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-placeholder-icon {
+  font-size: 48px;
+  color: #c0c0c0;
+}
+
+.album-info {
+  padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.album-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 0.4rem;
+}
+
+.album-desc {
+  font-size: 15px;
+  color: var(--p-color);
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/*---------------------------------------
+   ALBUM OVERLAY
+-----------------------------------------*/
+
+.album-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(1, 1, 1, 0.75);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+
+.album-overlay.is-open {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.album-overlay-panel {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 860px;
+  width: 100%;
+  padding: 3rem;
+  position: relative;
+  margin: auto;
+}
+
+.album-overlay-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--gray-color);
+  cursor: pointer;
+  padding: 0;
+}
+
+.album-overlay-close:hover {
+  color: var(--dark-color);
+}
+
+.album-overlay-title {
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.album-overlay-story {
+  font-size: 16px;
+  color: var(--p-color);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.album-overlay-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.album-overlay-photo {
+  margin: 0;
+}
+
+.album-overlay-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.album-overlay-photo figcaption {
+  font-size: 13px;
+  color: var(--gray-color);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.album-overlay-empty {
+  color: var(--gray-color);
+  font-size: 16px;
+  text-align: center;
+  padding: 2rem 0;
+  grid-column: 1 / -1;
+}
+
+
+/*---------------------------------------
+   RESPONSIVE
+-----------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .blog-hero-title {
+    font-size: 36px;
+  }
+
+  .blog-hero-sub {
+    font-size: 17px;
+  }
+
+  .tracker-charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .albums-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-ticker {
+    gap: 0.8rem;
+  }
+
+  .tracker-stats {
+    gap: 1.5rem;
+  }
+}

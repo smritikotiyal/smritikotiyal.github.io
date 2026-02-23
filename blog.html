@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Life Blog &mdash; Smriti Kotiyal</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="Smriti Kotiyal's Life Blog — weekly reflections, travel albums, and personal projects.">
+     <meta name="author" content="Smriti Kotiyal">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
+     <link rel="stylesheet" href="css/blog-style.css">
+
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg navbar-blog scroll">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                SmiKo
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#personal-highlight" class="nav-link smoothScroll">Highlight</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#weekly-notes" class="nav-link smoothScroll">Weekly Notes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#albums" class="nav-link smoothScroll">Albums</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- BLOG HERO -->
+    <section class="blog-hero d-flex flex-column justify-content-center align-items-center">
+        <div class="container text-center">
+            <h1 class="blog-hero-title">Life Blog</h1>
+            <p class="blog-hero-sub">Weekly reflections, things I learned, places I went, and moments worth sharing.</p>
+        </div>
+    </section>
+
+
+    <!-- PERSONAL HIGHLIGHT (slim) -->
+    <section class="highlights-slim highlights-slim-personal" id="personal-highlight">
+        <div class="container">
+            <div class="highlight-ticker">
+                <span class="highlight-label">Personal Highlight</span>
+                <div class="highlight-slim-item">
+                    <span class="highlight-badge highlight-badge-dark">Coming Up</span>
+                    <span class="highlight-slim-text">Next adventure loading&hellip; Watch this space for upcoming travel plans, hikes, and everything in between.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HEALTH TRACKER -->
+    <section class="section-padding health-tracker-section" id="health-tracker">
+        <div class="container">
+            <h3 class="mb-2 text-center">Health &amp; Fitness Tracker</h3>
+
+            <p class="text-center blog-section-desc">2026 personal goal: get fitter, more flexible, and stronger! <br>
+                I will be tracking and sharing my progress here for accountability! Let's go!</p>
+    
+
+            <div class="tracker-goal-wrap" id="trackerGoalWrap"></div>
+
+            <div class="tracker-charts-grid" id="trackerChartsGrid">
+                <div class="tracker-no-data">
+                    <span class="tracker-no-data-icon">📊</span>
+                    First entry coming soon &mdash; check back next week!
+                </div>
+            </div>
+
+            <p class="tracker-update-note">Updated weekly &nbsp;&middot;&nbsp; Wellbeing scale: 1 = low &nbsp;|&nbsp; 5 = great</p>
+        </div>
+    </section>
+
+
+    <!-- WEEKLY NOTES -->
+    <section class="section-padding bg-light-blog" id="weekly-notes">
+        <div class="container">
+            <h3 class="mb-5 text-center">Weekly Notes</h3>
+            <p class="text-center blog-section-desc">Things I learned, thought about, or found interesting — one week at a time.</p>
+
+            <div class="notes-grid">
+
+                <!-- Week entry template — duplicate this block to add new entries -->
+                <div class="note-card">
+                    <div class="note-date">Week of Feb 17, 2026</div>
+                    <h5 class="note-title">Starting this blog!</h5>
+                    <div class="note-body">
+                        <p>Hello and welcome to my little corner of the internet. This blog is a space for me to jot down what I am learning, thinking about, or simply what made the week interesting. It could be a book, a dataset, a hike, a recipe, or a random rabbit hole — no rules here.</p>
+                        <p>This week: setting up this page, and reflecting on how wild it feels to have a CHI paper accepted while also starting a new contracting role. Lots of change, lots of good things.</p>
+                    </div>
+                    <div class="note-tags">
+                        <span class="note-tag">Meta</span>
+                        <span class="note-tag">Life Update</span>
+                    </div>
+                </div>
+
+                <!-- Add new note-card blocks above this comment as weeks go by -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ALBUMS -->
+    <section class="section-padding" id="albums">
+        <div class="container">
+            <h3 class="mb-5 text-center">Albums</h3>
+            <p class="text-center blog-section-desc">Hiking trips, travels, food, and life in pictures. Click an album to see the full story.</p>
+
+            <div class="albums-grid">
+
+                <!--
+                ============================================================
+                ALBUM CARD TEMPLATE — copy this block to add a new album.
+
+                album-data-* attributes drive the overlay:
+                  album-data-title      = overlay heading
+                  album-data-story      = paragraph shown at the top of overlay
+                  album-data-photos     = JSON array of { src, caption } objects
+
+                For a placeholder card (no photos yet), omit album-data-photos
+                or leave it as [].
+                ============================================================
+                -->
+                <div class="album-card"
+                     data-album-title="A Morning of Puppy Love and Good Food - 2/1/2026"
+                     data-album-story="Some days feel like a deep exhale and this was one of them. The morning began on a yoga mat, surrounded not by silence, but by tiny paws, curious noses, and the softest kind of chaos. 
+                     At Puppy Yoga USA, yoga is not just about stretching your body, but about melting into the moment. As we moved (and sometimes paused completely), puppies wandered freely, curling up beside us, climbing onto laps, and occasionally stealing the spotlight. There was laughter, cuddles, and that unmistakable feeling of calm that only animals can bring.
+                     The session lasted for an hour, 40 minutes was Yoga time, and the rest was paw time! Our slot was at 1 PM, so the sweet paws were quite sleepy, but they still managed to heal us with their hugs.
+                    
+                     After puppy yoga, we carried that joy with us straight to brunch. I love some comfort—avocado toast crowned with a sunny egg, fresh greens, warm coffee, and easy conversation for brunch. It was one of those meals where time slows down, phones stay forgotten, and friendship takes center stage. Just girls, good food, and the simple happiness of being together.
+                     If you are ever craving a reset that is equal parts playful and peaceful, Puppy Yoga USA is absolutely worth checking out. Consider this your sign 🐶"
+                     data-album-photos='[
+                     {"src":"images/albums/P1.jpeg","caption":"Sweet Girl"},
+                     {"src":"images/albums/P2.jpeg","caption":"Sleepy baby"},
+                     {"src":"images/albums/hugs1.jpeg","caption":"All I needed to heal!"},
+                     {"src":"images/albums/brunch1.jpeg","caption":"Topping it off!"}
+                    ]'>
+                    <div class="album-cover album-cover-placeholder">
+                        <!--<span class="album-placeholder-icon"><i class="fa fa-camera"></i></span>-->
+                        <img src="images/albums/P1.jpeg" alt="Puppy Yoga USA visit" />
+                    </div>
+                    <div class="album-info">
+                        <h6 class="album-title">A Morning of Puppy Love and Good Food</h6>
+                        <p class="album-desc">2/1/2026</p>
+                    </div>
+                </div>
+
+                <!-- Add new album-card blocks here -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ALBUM OVERLAY MODAL -->
+    <div class="album-overlay" id="albumOverlay" role="dialog" aria-modal="true" aria-labelledby="overlayTitle">
+        <div class="album-overlay-panel">
+            <button class="album-overlay-close" id="albumOverlayClose" aria-label="Close album">&times;</button>
+            <h2 class="album-overlay-title" id="overlayTitle"></h2>
+            <p class="album-overlay-story" id="overlayStory"></p>
+            <div class="album-overlay-photos" id="overlayPhotos"></div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <section class="contact section-padding pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto col-lg-4 col-md-6 col-12 text-center">
+                    <h3 class="my-4 pt-4 pt-lg-0">Find me here</h3>
+                    <ul class="social-links mt-2" style="padding-left: 60px;">
+                        <li><a href="mailto:skotiyal@uw.edu" rel="noopener" class="fa fa-envelope"></a></li>
+                        <li><a href="https://www.linkedin.com/in/smriti-kotiyal/" rel="noopener" class="fab fa-linkedin"></a></li>
+                        <li><a href="https://github.com/smritikotiyal" rel="noopener" class="fa fa-github" style="font-size:30px"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALBUM OVERLAY SCRIPT -->
+    <script>
+    (function () {
+        const overlay  = document.getElementById('albumOverlay');
+        const closeBtn = document.getElementById('albumOverlayClose');
+        const oTitle   = document.getElementById('overlayTitle');
+        const oStory   = document.getElementById('overlayStory');
+        const oPhotos  = document.getElementById('overlayPhotos');
+
+        function openAlbum(card) {
+            const title  = card.dataset.albumTitle  || '';
+            const story  = card.dataset.albumStory  || '';
+            const photos = JSON.parse(card.dataset.albumPhotos || '[]');
+
+            oTitle.textContent = title;
+            oStory.textContent = story;
+            oPhotos.innerHTML  = '';
+
+            if (photos.length === 0) {
+                oPhotos.innerHTML = '<p class="album-overlay-empty">Photos coming soon!</p>';
+            } else {
+                photos.forEach(function (p) {
+                    const fig = document.createElement('figure');
+                    fig.className = 'album-overlay-photo';
+                    fig.innerHTML =
+                        '<img src="' + p.src + '" alt="' + (p.caption || '') + '">' +
+                        (p.caption ? '<figcaption>' + p.caption + '</figcaption>' : '');
+                    oPhotos.appendChild(fig);
+                });
+            }
+
+            overlay.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
+        }
+
+        function closeAlbum() {
+            overlay.classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+
+        // Click on any album card
+        document.addEventListener('click', function (e) {
+            const card = e.target.closest('.album-card[data-album-title]');
+            if (card) openAlbum(card);
+        });
+
+        // Close button
+        closeBtn.addEventListener('click', closeAlbum);
+
+        // Click backdrop (outside panel)
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay) closeAlbum();
+        });
+
+        // Esc key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeAlbum();
+        });
+    })();
+    </script>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- HEALTH TRACKER -->
+    <script>
+    // =============================================
+    // HEALTH TRACKER DATA — update this each week!
+    // =============================================
+
+    const healthConfig = {
+        startWeight: 68,    // set your actual start weight in kg
+        targetWeight: 60,   // goal weight
+        stepGoal: 8000,     // daily step target
+    };
+
+    const weeklyLog = [
+        // Add a new line here every week. Copy the format below:
+        { date: 'Jan 4', weight: 67.0, energy: 4, fitness: 3, flexibility: 3, feel: 4 },
+        { date: 'Jan 11', weight: 67.2, energy: 4, fitness: 3, flexibility: 3, feel: 4 },
+        { date: 'Jan 18', weight: 67.2, energy: 4, fitness: 3, flexibility: 3, feel: 3 },
+        { date: 'Jan 25', weight: 67.2, energy: 3, fitness: 2, flexibility: 2, feel: 2 },
+        { date: 'Feb 2', weight: 67.2, energy: 3, fitness: 2, flexibility: 2, feel: 2 },
+        { date: 'Feb 8', weight: 67.2, energy: 3, fitness: 2, flexibility: 2, feel: 2 },
+        { date: 'Feb 15', weight: 67.9, energy: 3, fitness: 2, flexibility: 2, feel: 2 },
+        { date: 'Feb 22', weight: 67.6, energy: 3, fitness: 2, flexibility: 2, feel: 3 },
+        // { date: 'Mar  1', weight: 71.4, energy: 4, fitness: 3, flexibility: 2, feel: 4 },
+    ];
+
+    const dailySteps = [
+        // Add 7 entries each week (one per day, Mon–Sun). Yellow bar = goal met!
+        { date: 'Feb 15', steps: 3368 },
+        { date: 'Feb 16', steps: 5213 },
+        { date: 'Feb 17', steps: 6167 },
+        { date: 'Feb 18', steps: 567 },
+        { date: 'Feb 19', steps: 922 },
+        { date: 'Feb 20', steps: 6922 },
+        { date: 'Feb 21', steps: 268 },
+    ];
+
+    // =============================================
+    //  Nothing below needs to change week to week
+    // =============================================
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const goalWrap  = document.getElementById('trackerGoalWrap');
+        const chartsGrid = document.getElementById('trackerChartsGrid');
+
+        if (!weeklyLog.length || !healthConfig.startWeight) return; // show placeholder until data is added
+
+        const latest   = weeklyLog[weeklyLog.length - 1];
+        const kgLost   = +(healthConfig.startWeight - latest.weight).toFixed(1);
+        const totalGoal = healthConfig.startWeight - healthConfig.targetWeight;
+        const progress = Math.max(0, Math.min(100, (kgLost / totalGoal) * 100));
+        const kgToGo   = Math.max(0, latest.weight - healthConfig.targetWeight).toFixed(1);
+
+        // — Goal summary —
+        goalWrap.innerHTML = `
+            <div class="tracker-stats">
+                <div class="tracker-stat">
+                    <span class="tracker-stat-value">${healthConfig.startWeight}</span>
+                    <span class="tracker-stat-label">Start (kg)</span>
+                </div>
+                <div class="tracker-stat">
+                    <span class="tracker-stat-value">${latest.weight}</span>
+                    <span class="tracker-stat-label">Now (kg)</span>
+                </div>
+                <div class="tracker-stat">
+                    <span class="tracker-stat-value">${healthConfig.targetWeight}</span>
+                    <span class="tracker-stat-label">Goal (kg)</span>
+                </div>
+            </div>
+            <div class="tracker-progress-bar-wrap">
+                <div class="tracker-progress-bar-fill" style="width:${progress.toFixed(1)}%"></div>
+            </div>
+            <p class="tracker-progress-label">
+                ${kgLost > 0 ? kgLost + ' kg lost' : 'Just getting started!'} &nbsp;&middot;&nbsp; ${kgToGo} kg to go
+            </p>
+        `;
+
+        // — Replace placeholder with canvases —
+        chartsGrid.innerHTML = `
+            <div class="tracker-chart-card">
+                <div class="tracker-chart-title">Weight over time</div>
+                <canvas id="weightChart"></canvas>
+            </div>
+            <div class="tracker-chart-card">
+                <div class="tracker-chart-title">Weekly wellbeing</div>
+                <canvas id="wellbeingChart"></canvas>
+            </div>
+            <div class="tracker-chart-card tracker-chart-full">
+                <div class="tracker-chart-title">Daily steps &nbsp;<span class="tracker-step-goal">Goal: ${healthConfig.stepGoal.toLocaleString()} steps/day</span></div>
+                <canvas id="stepsChart"></canvas>
+            </div>
+        `;
+
+        // Cap at last 12 weeks
+        const recentLog = weeklyLog.slice(-12);
+        const labels = recentLog.map(e => e.date);
+
+        // Weight line chart
+        new Chart(document.getElementById('weightChart'), {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [
+                    {
+                        label: 'Weight (kg)',
+                        data: recentLog.map(e => e.weight),
+                        borderColor: '#010101',
+                        backgroundColor: 'rgba(1,1,1,0.05)',
+                        borderWidth: 2.5,
+                        tension: 0.35,
+                        pointBackgroundColor: '#ffd500',
+                        pointBorderColor: '#010101',
+                        pointRadius: 5,
+                    },
+                    {
+                        label: 'Goal',
+                        data: labels.map(() => healthConfig.targetWeight),
+                        borderColor: '#66bb6a',
+                        borderDash: [6, 4],
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: true, position: 'bottom' } },
+                scales: {
+                    y: {
+                        min: healthConfig.targetWeight - 1,
+                        max: healthConfig.startWeight + 1,
+                        ticks: { stepSize: 1 }
+                    }
+                }
+            }
+        });
+
+        // Wellbeing line chart (last 12 weeks, 1-5 scale)
+        new Chart(document.getElementById('wellbeingChart'), {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [
+                    {
+                        label: 'Energy',
+                        data: recentLog.map(e => e.energy),
+                        borderColor: '#e6b800',
+                        backgroundColor: 'rgba(255,213,0,0.08)',
+                        borderWidth: 2.5, tension: 0.35,
+                        pointRadius: 4, pointBackgroundColor: '#e6b800',
+                    },
+                    {
+                        label: 'Fitness',
+                        data: recentLog.map(e => e.fitness),
+                        borderColor: '#010101',
+                        backgroundColor: 'rgba(1,1,1,0.05)',
+                        borderWidth: 2.5, tension: 0.35,
+                        pointRadius: 4, pointBackgroundColor: '#010101',
+                    },
+                    {
+                        label: 'Flexibility',
+                        data: recentLog.map(e => e.flexibility),
+                        borderColor: '#43a047',
+                        backgroundColor: 'rgba(102,187,106,0.08)',
+                        borderWidth: 2.5, tension: 0.35,
+                        pointRadius: 4, pointBackgroundColor: '#43a047',
+                    },
+                    {
+                        label: 'Feel-good',
+                        data: recentLog.map(e => e.feel),
+                        borderColor: '#1e88e5',
+                        backgroundColor: 'rgba(66,165,245,0.08)',
+                        borderWidth: 2.5, tension: 0.35,
+                        pointRadius: 4, pointBackgroundColor: '#1e88e5',
+                    },
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: true, position: 'bottom' } },
+                scales: { y: { min: 1, max: 5, ticks: { stepSize: 1 } } }
+            }
+        });
+
+        // Daily steps bar chart (last 30 days)
+        const recentSteps = dailySteps.slice(-30);
+        if (recentSteps.length) {
+            new Chart(document.getElementById('stepsChart'), {
+                type: 'bar',
+                data: {
+                    labels: recentSteps.map(e => e.date),
+                    datasets: [{
+                        label: 'Steps',
+                        data: recentSteps.map(e => e.steps),
+                        backgroundColor: recentSteps.map(e =>
+                            e.steps >= healthConfig.stepGoal
+                                ? 'rgba(255,213,0,0.85)'
+                                : 'rgba(1,1,1,0.18)'
+                        ),
+                        borderRadius: 4,
+                        borderSkipped: false,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, ticks: { stepSize: 2000 } }
+                    }
+                }
+            });
+        }
+    });
+    </script>
+
+</body>
+</html>
